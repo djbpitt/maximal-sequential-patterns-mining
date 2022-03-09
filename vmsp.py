@@ -22,7 +22,7 @@ class Vmsp:
             with open(self._output, "rU") as f:
                 lines = f.readlines()
         except:
-            print "read_output error"
+            print("read_output error")
 
         # decode
         patterns = []
@@ -37,4 +37,4 @@ if __name__ == "__main__":
     vmsp = Vmsp()
     vmsp.encode_input([])
     vmsp.run()
-    print vmsp.decode_output()
+    print(vmsp.decode_output())
